@@ -1,0 +1,10 @@
+#pragma namespace("\\\\.\\root\\microsoft\\windows\\DesiredStateConfiguration")
+
+[ClassVersion("1.0.0"), FriendlyName("cServicePermission")]
+class cServicePermission : OMI_BaseResource
+{
+[Key] string ServiceName;
+[Key] string Principal;
+string AccessRights[];
+[write,ValueMap{"Present", "Absent"},Values{"Present", "Absent"}] string Ensure;
+};
