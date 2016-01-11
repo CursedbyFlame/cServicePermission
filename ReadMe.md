@@ -1,4 +1,4 @@
-# cServicePermissions
+# cServicePermission
 
 The **cServicePermission** module contains a single DSC resource **cServicePermission**. 
 And it's designed to update ACL on the Windows Service instance.
